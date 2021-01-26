@@ -1,0 +1,51 @@
+.works {
+  padding-bottom: 94px;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desctop) {
+    display: block;
+  }
+}
+
+.works-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work-thumb {
+  position: relative;
+}
+
+.work-subtitle {
+  margin: 0;
+  padding: 27px 82px;
+
+  color: $whiteColor;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.work-info {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

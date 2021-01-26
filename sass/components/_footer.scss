@@ -1,0 +1,189 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: $generalBg;
+}
+
+.infobox {
+  @media screen and (max-width: $max-mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    text-align: center;
+
+    .wrapper:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    justify-content: space-between;
+    align-items: baseline;
+
+    text-align: left;
+
+    .wrapper:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+
+  color: $whiteColor;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-desc {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.footer-add {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .item-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    color: $whiteColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+.common {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  color: $whiteColor;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desctop) {
+    text-align: start;
+  }
+}
+
+.mailing {
+  .button {
+    display: inline-flex;
+    padding: 10px 28px;
+    align-items: center;
+    color: $whiteColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 450px;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    max-width: 100%;
+
+    text-align: start;
+  }
+}
+
+.email {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $generalBg;
+  color: $whiteColor;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
+.form-send {
+  margin-left: 10px;
+}

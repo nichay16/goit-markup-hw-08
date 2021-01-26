@@ -1,0 +1,89 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+
+  background: $generalBg;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .button {
+    display: inline-block;
+    padding: 10px 32px;
+
+    color: $whiteColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/hero-mobile.jpg);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/hero-tablet.jpg);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/hero-desctop.jpg);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero-desctop@2x.jpg);
+    }
+  }
+}
+
+.hero-title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: $whiteColor;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
